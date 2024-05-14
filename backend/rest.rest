@@ -72,7 +72,7 @@ GET http://localhost:5000/products
 
 //get single product
 ###
-GET http://localhost:5000/products/496a6601-78fa-43ab-804d-bee119dcb37a
+GET http://localhost:5000/products/6a9f51c1-44da-4fa4-bfa4-2aa71bacdf6d
 
 
 
@@ -85,3 +85,17 @@ Content-Type: application/json
     "name": "Iphone 30 Pro Max",
     "price": 7500
 }
+
+//update data product
+###
+PATCH  http://localhost:5000/products/496a6601-78fa-43ab-804d-bee119dcb37a
+Content-Type: application/json
+
+{
+    "name": "Iphone 15 Pro Max update",
+    "price": 1600
+}
+
+
+###
+DELETE http://localhost:5000/products/6a9f51c1-44da-4fa4-bfa4-2aa71bacdf6d

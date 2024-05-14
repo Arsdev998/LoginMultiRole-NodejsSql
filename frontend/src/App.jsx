@@ -1,17 +1,9 @@
-import { useState } from "react";
+import Navbar from "./components/Navbar";
 
-function App() {
-
+export default function App() {
   return (
-    < >
-      <h1 className="text-red-500 mt-12 px-[200px] font-bold font-mono text-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-        praesentium aut deleniti ea provident nulla assumenda enim, possimus et
-        hic reiciendis <span className="text-yellow-500">repellat</span> at atque, fugit quis explicabo labore facere
-        aliquid.
-      </h1>
+    <>
+      <Navbar/>
     </>
-  );
+  )
 }
-
-export default App;
