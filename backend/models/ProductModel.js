@@ -25,14 +25,6 @@ const Products = db.define(
         len: [3, 100],
       },
     },
-
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notEmpty: true,
-      },
-    },
     price: {
       type: DataTypes.INTEGER,
       allowNull: false,

@@ -38,4 +38,4 @@ export const logOut = (req, res) =>{
       if(err) return res.status(400).json({msg: "Tidak dapat logout"});
       res.status(200).json({msg: "Anda telah logout"});
   });
-}
+};
