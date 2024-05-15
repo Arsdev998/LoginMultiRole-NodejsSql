@@ -1,14 +1,15 @@
 import React, { useEffect } from "react";
 import Layout from "./Layout";
-import UserList from "../components/UserList";
+import FormEditUser from "../components/FormEditUser";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getMe } from "../features/authSlice";
 
-const Users = () => {
+const EditUser = () => {
+    
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { isError, user } = useSelector((state) => state.auth);
+  const { isError,user } = useSelector((state) => state.auth);
 
   useEffect(() => {
     dispatch(getMe());
@@ -24,8 +25,9 @@ const Users = () => {
   }, [navigate, user, isError]);
   return (
     <Layout>
-      <UserList />
+      <FormEditUser />
     </Layout>
   );
 };
-export default Users;
+
+export default EditUser;
